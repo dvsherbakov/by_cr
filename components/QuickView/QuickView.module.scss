@@ -1,0 +1,56 @@
+.quickView {
+  position: fixed;
+  z-index: 5;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  background-color: rgba(50, 50, 50, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    background-color: #FFF;
+    display: flex;
+
+    .closeArea {
+      cursor: pointer;
+      padding: 3px;
+    }
+
+    .infoArea {
+      padding: 20px;
+      width: 48%;
+      .caption{
+        font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+        font-size: 26px;
+      }
+
+      .counterArea {
+        padding-top: 10px;
+        font-size: 26px;
+      }
+
+      .sizesArea {
+        padding-top: 10px;
+        font-size: 24px;
+      }
+    }
+
+    input, select {
+      margin-top: 10px;
+      font-size: 20px;
+      line-height: 28px;
+      color: rgb(87, 87, 87);
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom-width: 1px;
+    }
+
+    select {
+      width: 330px;
+    }
+  }
+}

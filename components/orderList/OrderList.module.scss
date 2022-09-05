@@ -1,0 +1,125 @@
+@import 'styles/variables';
+.orderContainer {
+
+}
+
+.orderList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orderItem {
+  margin: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Slab', monospace;
+  border-bottom: 2px solid $color-pink;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+  background-color: #EDEDED;
+
+  .itemHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 25px;
+    }
+
+    .counter {
+      display: flex;
+      margin-left: 10px;
+      align-items: center;
+
+      strong {
+        padding: 5px;
+      }
+
+      .buttons {
+        margin-left: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          width: 15px;
+          height: 15px;
+          padding: 0;
+          font-size: 13px;
+
+          border: none;
+          cursor: pointer;
+          background-color: transparent;
+          margin: 1px
+        }
+
+        button:hover {
+          border-radius: 50%;
+          background-color: $color1;
+        }
+      }
+    }
+  }
+
+  .itemOptions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      padding: 10px 50px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        background: transparent;
+        border: none;
+        margin-right: 20px;
+
+        svg {
+          cursor: pointer;
+        }
+
+        svg:hover {
+          color: $color1;
+        }
+      }
+
+      select {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  @media (max-width: 680px) {
+    .itemHead {
+      flex-direction: column;
+    }
+
+    .itemOptions {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      div {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+

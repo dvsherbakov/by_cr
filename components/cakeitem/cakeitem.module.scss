@@ -1,0 +1,45 @@
+@import 'styles/variables';
+
+.cakeitem {
+  width: 48%;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  .imgContainer {
+    display: flex;
+    height: 195px;
+    margin: 12px 0;
+    line-height: 195px;
+    outline-width: 0;
+    padding: 8px;
+    width: 260px;
+    border-bottom: 2px solid $color-pink;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    background-color: #EDEDED;
+
+    img {
+      box-sizing: border-box;
+      margin: auto;
+      max-height: 100%;
+      max-width: 100%;
+      vertical-align: middle;
+      border-radius: 3px;
+    }
+  }
+  span {
+    padding: 0 5px;
+    input {
+      margin: 0 8px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .cakeitem {
+    width: 95%;
+  }
+}

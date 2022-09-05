@@ -1,0 +1,29 @@
+@import 'styles/variables';
+
+.header {
+  background-color: $color3;
+  color: $color1;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 3;
+  padding: 0 5em;
+
+  span {
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  .phone {
+    font-weight: 500;
+    max-height: 48px;
+    overflow: hidden;
+  }
+
+  .basket {
+    cursor: pointer;
+  }
+}
+

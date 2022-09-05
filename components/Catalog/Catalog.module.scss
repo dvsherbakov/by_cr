@@ -1,0 +1,71 @@
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 0;
+
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 0 25px 0;
+
+    .briefBtn {
+      position: absolute;
+      bottom: -52px;
+      width: 100%;
+      max-width: 240px;
+      text-align: center;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.8);
+      ily: "Playfair Display", Arial, Helvetica, sans-serif;
+      transition: all .8s ease;
+      z-index: 4;
+      cursor: pointer;
+
+      &:hover {
+        color: #C9C9C9;
+      }
+    }
+
+
+    li {
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 10px;
+      position: relative;
+
+      div {
+        font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+        position: relative;
+        overflow: hidden;
+
+        .cover {
+          border-radius: 9px;
+          position: absolute;
+          padding: 5px 20px;
+          font-size: 16px;
+          background-color: rgba(148, 201, 198, 0.8);
+          color: #FFF;
+        }
+      }
+
+      div:hover .briefBtn {
+        bottom: 0;
+      }
+
+      .caption {
+        font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+
+      .price {
+        padding-top:10px;
+        font-size: 13px;
+      }
+    }
+
+
+  }
+}

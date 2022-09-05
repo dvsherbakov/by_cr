@@ -1,0 +1,104 @@
+.catalog,
+.catalogItem {
+  display: flex;
+  justify-content: center;
+
+  max-width: 1024px;
+  margin: auto;
+}
+
+.catalog {
+  flex-direction: column;
+
+  .navArea {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    a {
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+
+  }
+}
+
+.catalogItem {
+  width: 100%;
+  margin-top: 25px;
+  font-size: 26px;
+  color: rgb(87, 87, 87);
+
+
+  .mainColumn {
+    max-width: 502px;
+
+    .imgSection {
+      border: 1px solid rgba(194, 197, 194, 0.2);
+      display: flex;
+    }
+  }
+
+  .slaveColumn {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    div {
+      margin-top: 15px;
+
+      select, input {
+        margin-top: 10px;
+        padding: 10px 3px;
+        color: rgb(87, 87, 87);
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom-width: 1px;
+        font-size: 16px
+      }
+    }
+
+    .counter {
+      display: flex;
+
+      .counterContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .counterButton {
+          background: transparent;
+          border: none;
+          margin-left: -30px;
+          font-size: 11px;
+          transform: rotate(90deg);
+          outline: none;
+          cursor: pointer;
+          padding: 2px;
+          color: rgb(194, 197, 194);
+
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+    }
+    .basketButton{
+      margin-top:25px;
+      padding:8px;
+      background-color: #D5B459;
+      border:none;
+      border-radius: 2px;
+      line-height: 24px;
+      font-family: 'Playfair Display', sans-serif;
+      font-size:16px;
+      color:white;
+    }
+  }
+
+}
+

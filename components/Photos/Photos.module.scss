@@ -1,0 +1,16 @@
+.photos {
+  display: flex;
+  flex-direction: column;
+
+  .pictureFrame {
+    margin: 3px;
+  }
+
+  .iconFrame {
+    padding: 3px;
+    img{
+      margin-right: 3px;
+      border-radius: 3px;
+    }
+  }
+}
